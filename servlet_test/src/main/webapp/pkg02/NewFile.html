@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+<div>
+  <button type="button" id="reset">새로고침</button>
+</div>
+
+<form id="frm" method="POST"
+      action="/test/numberConfirm">
+      
+  <div id="wrap">
+      <label for="answer"></label>
+      <input type="text" id="answer" name="answer">
+      <button type="submit">계산</button>
+  </div>
+</form>
+
+<script>
+
+  function makeMulti(){
+	  var a = parseInt(Math.random() * 9 + 2);
+	  var b = parseInt(Math.random() * 9 + 1);
+	  document.querySelector('label').textContent = a + ' X ' + b + ' = ';
+	  
+  }
+  
+  makeMulti();
+  
+  document.getElementById("reset").addEventListener("click", (evt)=>{
+	  makeMulti();
+  })
+ 
+  
+</script>
+</body>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+.title{
+  font-weight: 900;
+}
+</style>
+</head>
+<body>
+
+<form method="post"
+      action="/test/join">
+  <div>
+  <div class="title">아이디</div>
+  <input type="text" id="id" name="id">@naver.com
+  </div>
+  <br>
+  
+  <div>
+  <div class="title">비밀번호</div>
+  <input type="password" id="pw1" name="pw1">
+  </div>
+  <br>
+  
+  <div>
+  <div class="title">비밀번호재확인</div>
+  <input type="password" id="pw2" name="pw2">
+  </div>
+  <br>
+  
+  <div>
+  <div class="title">이름</div>
+  <input type="text" id="name" name="name" >
+  </div>
+  <br>
+  
+  <div>
+  <div class="title">생년월일</div>
+  <input type="text" id="year" name="year" placeholder="년(4자)">
+  <select name="date">
+    <option value="month" selected >월</option>
+    <option value="1" >1월</option>
+    <option value="2" >2월</option>
+    <option value="3" >3월</option>
+    <option value="4" >4월</option>
+    <option value="5" >5월</option>
+    <option value="6" >6월</option>
+    <option value="7" >7월</option>
+    <option value="8" >8월</option>
+    <option value="9" >9월</option>
+    <option value="10" >10월</option>
+    <option value="11" >11월</option>
+    <option value="12" >12월</option>
+  </select>
+  <input type="text" id="day" name="day" placeholder="일">
+  </div>
+  <br>
+  
+  <div>
+  <div class="title">성별</div>
+  <select name="gender">
+    <option value="none" selected >성별</option>
+    <option value="남" >남자</option>
+    <option value="여" >여자</option>
+  </select>
+  </div>
+  <br>
+  
+  <div>
+  <div class="title">본인 확인 이메일 (선택)</div>
+  <input type="text" id="email" name="email" placeholder="선택입력">
+  </div>
+  <br>
+  
+  <div>
+  <div class="title">휴대전화</div>
+  <select name="con-num">
+    <option value="82" selected >대한민국 +82</option>
+    <option value="00" >모름</option>
+  </select>
+    <div>
+    <input type="text" id="phone" name="phone" placeholder="전화번호입력">
+    <button type="button">인증번호받기</button>
+    </div>
+    <input type="text" id="number" name="number" placeholder="인증번호 입력하세요">
+  </div>
+  
+  <br>
+  <div>
+  <button type="submit">가입하기</button>
+  </div>
+
+
+</form>
+
+</body>
+</html>

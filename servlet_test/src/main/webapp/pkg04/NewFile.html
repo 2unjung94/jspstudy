@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+<div>
+<form id="frm" method="POST"
+      action="/test/upload">
+  <div>
+    <label for="writer">작성자</label>
+    <input type="text" name="writer" id="writer" >
+  </div>
+  <div>
+    <label for="title">제목</label>
+    <input type="text" name="title" id="title" >
+  </div>
+  <div>
+    <textarea rows="5" cols="20" name="contents" id="contents" placeholder="내용"></textarea>
+  </div>
+  <div>
+    <button type="submit" id="btn1">작성완료</button>
+    <button type="reset">작성초기화</button>
+  </div>
+</form>
+</div>
+
+
+</body>
+</html>
