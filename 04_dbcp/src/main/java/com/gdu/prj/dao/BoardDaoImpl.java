@@ -31,7 +31,7 @@ public class BoardDaoImpl implements BoardDao {
   // SingletonPattern
   private static BoardDao boardDao = new BoardDaoImpl();
   private BoardDaoImpl() {
-    // META-INF\context.xml 파일에 명시된 Resource 를 이용해 DataSource 객체 생성하기
+    // META-INF\context.xml 파일에 명시된 Resource 를 이용해 DataSource 객체 생성하기 (톰캣 필요)
     try {
       Context context = new InitialContext();
       Context env = (Context)context.lookup("java:comp/env");

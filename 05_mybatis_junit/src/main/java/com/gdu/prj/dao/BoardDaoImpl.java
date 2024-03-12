@@ -19,7 +19,7 @@ public class BoardDaoImpl implements BoardDao {
   // SingletonPattern
   private static BoardDao boardDao = new BoardDaoImpl();
   private BoardDaoImpl() {
-    // mybatis-config.xml 파일을 이용한 SqlSessionFactory 객체 생성
+    // mybatis-config.xml 파일을 이용한 SqlSessionFactory 객체 생성 (톰캣 개입 없음)
     try {
       String resource = "com/gdu/prj/config/mybatis-config.xml";  // .으로 구분하지 말고 / 로 구분할 것
       InputStream in = Resources.getResourceAsStream(resource);
